@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@use "base/fonts" as *;
+@use "base/variable" as *;
+@use "base/mixin" as *;
+@use "base/reset" as *;
+@use "base/container" as *;
+
+body {
+    background: #000;
+}
+
+section {
+    &.hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: var(--page-padding);
+        background-image: url("./../images/hero.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        h1, span {
+            position: relative;
+            color: $mainColor;
+        }
+    }
+
+    &.scroll-stage {
+        position: relative;
+        height: 600vh;
+
+        .scroll-scene {
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .scroll-layer {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+
+            image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(0.8);
+            }
+        }
+
+        .captions {
+            .caption {
+                position: absolute;
+                left: 0;
+                bottom: to_vw(40);
+                padding: var(--page-padding);
+                clip-path: inset(100% 0 0 0);
+                transform: translateY(40px);
+
+                * {
+                    color: $mainColor;
+                }
+
+                h1 {
+                    color: $pointColor;
+                    margin-bottom: to_vw(30);
+                }
+
+                p {
+                    width: 30%;
+                }
+            }
+        }
+
+        .progress {
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            bottom: var(--page-padding);
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            padding: 0 var(--page-padding);
+
+            &-item {
+                position: relative;
+                flex: 1;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            &-fill {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: $pointColor;
+            }
+        }
+    }
+
+    &.outro {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./../images/outro.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+

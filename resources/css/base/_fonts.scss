@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "AustinNewsDeckWeb";
+    src: url("/shared/fonts/AustinNewsDeckWeb-Medium.eot");
+    src: url("/shared/fonts/AustinNewsDeckWeb-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/shared/fonts/AustinNewsDeckWeb-Medium.woff2") format("woff2"),
+    url("/shared/fonts/AustinNewsDeckWeb-Medium.woff") format("woff"),
+    url("/shared/fonts/AustinNewsDeckWeb-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

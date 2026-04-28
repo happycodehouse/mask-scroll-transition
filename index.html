@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./resources/css/style.min.css">
+    <title>mask-scroll-transition</title>
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <header>
+        <h1>Mask Scroll Transition</h1>
+        <a href="https://github.com/happycodehouse/mask-scroll-transition" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <p>Content sourced from <a href="https://www.pixar.com/" rel="noopener noreferrer" target="_blank">www.pixar.com</a></p>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <h1>SVG Mask Blind Effect</h1>
+            <span>Images transition through horizontal blinds, driven by scroll</span>
+        </section>
+        <section class="scroll-stage">
+            <div class="scroll-scene">
+                <svg class="scroll-layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <mask id="mask1" maskUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="100" height="100" fill="black"/>
+                            <g id="mask-1"></g>
+                        </mask>
+                    </defs>
+                    <image href="./resources/images/img-a.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" mask="url(#mask1)"/>
+                </svg>
+                <svg class="scroll-layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <mask id="mask2" maskUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="100" height="100" fill="black"/>
+                            <g id="mask-2"></g>
+                        </mask>
+                    </defs>
+                    <image href="./resources/images/img-b.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" mask="url(#mask2)"/>
+                </svg>
+                <svg class="scroll-layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <mask id="mask3" maskUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="100" height="100" fill="black"/>
+                            <g id="mask-3"></g>
+                        </mask>
+                    </defs>
+                    <image href="./resources/images/img-c.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" mask="url(#mask3)"/>
+                </svg>
+                <div class="progress">
+                    <div class="progress-item">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="captions">
+                    <div class="caption">
+                        <h1>The Astral Plane</h1>
+                        <p>
+                            Adjacent to The You Seminar, the Astral Plane is where Mystics Without Borders actively try to save lost souls. “The terrain is inspired by kinetic sand,” says Abadilla. “Everything in the soul universe is made up of this sparkly particulate material. While The You Seminar is more mathematically constructed, the Astral Plane is more organic.”
+                            <br><br>
+                            The astral sand needed to move in a specific way, particularly as Moonwind’s ship sailed through it. Enter effects supervisor Bill Watral and his team. “The idea behind the whole place is that it’s a mental construct of what you think it is when you’re there—it can be anything,” says Watral. “As the boat pushes the sand, it moves in a physical way that’s not based in reality and freezes, taking on the shapes of the surrounding environment. We also authored a sparkle pass for everything. We carefully control where those sparkles are around the world.”
+                        </p>
+                    </div>
+                    <div class="caption">
+                        <h1>Personality Pavilions</h1>
+                        <p>Personality Pavilions are individual buildings where new souls go to get their personalities. According to sets art director Paul Abadilla, each pavilion is an abstract representation of the personality trait. “We leave some of them up to interpretation, because there are so many possibilities,” says Abadilla. “But our hero pavilions use iconic shapes—the Aloof Pavilion, for example, looks like a nose pointed up in the air. It’s a quick read that’s supported by the characters’ performances.”</p>
+                    </div>
+                    <div class="caption">
+                        <h1>The Hall of Everything</h1>
+                        <p>The Hall of Everything is a collection of everything on Earth that inspires new souls in search of their spark. Says Pilcher, “We bleached the color in the Hall of Everything—where souls go to interact with possible interests. Everything there is recognizable, but there’s no color in it unless you interact with it.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="outro"></section>
+    </div>
+</div>
+<script src="./resources/js/lib/gsap.min.js"></script>
+<script src="./resources/js/lib/ScrollTrigger.min.js"></script>
+<script src="./resources/js/lib/lenis.min.js"></script>
+<script src="./resources/js/custom.js"></script>
+</body>
+</html>

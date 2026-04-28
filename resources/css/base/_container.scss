@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@use "variable" as *;
+@use "mixin" as *;
+
+:root {
+    font-size: 12px;
+    --page-padding: 1.5rem;
+    --base-ratio: 0.75;
+    --base-size: 1536;
+    --base-percent: 100vw;
+
+    @include media(false, tablet) {
+        --base-ratio: 1;
+        --base-size: 1;
+        --base-percent: 1px;
+    }
+}
+
+header {
+    display: grid;
+    grid-template:
+        "title title"
+        "github github"
+        "credit credit"
+        1fr / auto 1fr;
+    gap: 1rem 2rem;
+    justify-items: start;
+    align-content: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    padding: var(--page-padding);
+    pointer-events: none;
+
+    * {
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: inherit;
+        color: white;
+    }
+
+    h1 {
+        grid-area: title;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+    }
+
+    a {
+        grid-area: github;
+        pointer-events: auto;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        grid-area: credit;
+        place-self: end start;
+    }
+}
