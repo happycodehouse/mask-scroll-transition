@@ -1,0 +1,12 @@
+# IntelliJ / WebStorm
+.idea/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# 에디터 임시파일
+*.swp
+*.swo
