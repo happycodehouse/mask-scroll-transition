@@ -1,4 +1,4 @@
-﻿# 🪟 mask-scroll-transition
+﻿# 🪟 SVG Blind Reveal - Scroll Image Transition
  
 > A scroll-driven image transition using SVG masks and horizontal blinds
 
