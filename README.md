@@ -2,9 +2,9 @@
  
 > A scroll-driven image transition using SVG masks and horizontal blinds
 
-> <p align="left">
+<!-- <p align="left">
 <img src="./resources/images/preview.png" alt="Preview Image" width="600">
-</p>
+</p> -->
 
 [🔗 Live Demo](https://mask-scroll-transition.netlify.app/)
 
