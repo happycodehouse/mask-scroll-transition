@@ -24,4 +24,4 @@
 - **SCSS**
 
 ## Credits
-- Inspired by [Shape Slideshow with Clip Path](https://tympanus.net/codrops/2021/03/10/shape-slideshow-with-clip-path/) on Codrops.
+- Inspired by [SVG Mask Transitions on Scroll with GSAP and ScrollTrigger](https://tympanus.net/codrops/2026/03/11/svg-mask-transitions-on-scroll-with-gsap-and-scrolltrigger/) on Codrops.
