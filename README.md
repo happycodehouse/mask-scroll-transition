@@ -22,3 +22,6 @@
 - **Lenis** (smooth scroll)
 - **JavaScript (ES6+)**
 - **SCSS**
+
+## Credits
+- Inspired by [SVG Mask Transitions on Scroll with GSAP and ScrollTrigger](https://tympanus.net/codrops/2026/03/11/svg-mask-transitions-on-scroll-with-gsap-and-scrolltrigger/) on Codrops.
